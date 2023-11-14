@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> 
         <title>My Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->  
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!-- JavaScript -->
+        <script src="assignment1.js"></script>
+
         <style>
       /* Style for the language flags */
       .flag {
@@ -12,10 +20,10 @@
       }
 
       /* Style for the separator line */
-      .separator {
+      .separator_green {
         border: 1px solid green;
         height: 20px;
-        margin: 0 3px;
+        margin: 0 2px;
         
       }
 
@@ -24,23 +32,23 @@
         float: left;
         display: flex;
         align-items: center;
-        margin-bottom: 130px;
+        margin-bottom: 120px;
+        margin-top: 10px;
       }
 
       /* Style for the main container */
       .header {
         
-        background-size:contain;
-        background-color: black;
+        background-size: 100% 98%;
+        
         background-image: url("assets/images/header_background.jpg");
         background-repeat: no-repeat;
         background-position: left top;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: white;
         padding: 10px;
-        height: 150px;
+        height: 200px;
 
       }
 
@@ -49,13 +57,27 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 150px;
+        margin-top: 120px;
+        
       }
 
       /* Style for the name and surname text */
       .name { 
-
-        font-size: 24px;
+        font-family: 'Courier New';
+        font-size: 30px;
         font-weight: bold;
+        color: white;
+        
+      }
+
+      /* Style for the title text */
+      .title { 
+        font-family:Tahoma;
+        font-size: 15px;
+        color: rgb(231,155,3);
+        margin: 0px 10px 10px 0px;
+
       }
 
       .profile_photo {
@@ -73,22 +95,182 @@
         height: 120px;
         padding-bottom: 30px;
       }
+
+
+      .main {
+        margin-top: 5px;
+      }
+      nav {
+        float: left;
+        width: 13%;
+        height: 100%;
+        background-color: white;
+        font-size: 16px;
+        font-family: "Georgia";
+      
+      }
+
+      .center {
+        
+        width: 67%;
+        height: 100%;
+        background-color: white;
+      }
+
+      .rightside {
+        
+        float: right;
+        width: 20%;
+        height: 100%;
+        background-color: white;
+        border: 2px solid rgb(2, 182, 2); 
+        border-radius: 20px; 
+        overflow: hidden; 
+        
+      }
+
+      .menu {
+        background-color: #f1f1f1;
+        border: 2px solid rgb(2, 182, 2); 
+        border-radius: 20px; 
+        overflow: hidden; 
+      }
+
+      .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 5px;
+      }
+
+      .menu li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .menu li img {
+        margin-right: 15px;
+        max-width: 20px; 
+        max-height: 20px; 
+      }
+
+      .quickid{
+        text-align: center;
+        background-color: rgb(0, 71, 150);
+        color: white;
+        font-family: "Garamond";
+      }
+
+      .quickid_title {
+        
+        font-size: 16px;
+        color: white;
+
+        
+      }
+
+      .seperator_red {
+        
+        content: '';
+        display:grid;
+        position: relative;
+        left: 2%;
+        width: 96%;
+        height: 1px; 
+        background-color: red; 
+        transform: translateY(-100%);
+      }
+
+      .innerTitle {
+        display: flex;
+        flex-direction: row;
+        align-items:start;
+        text-align: start;
+        margin-left: 5px;
+        font-size: 14px;
+      }
+      
+      .questions {
+        margin-right: 10px;
+      }
+
     </style>
     </head>
     <body>
         <div class="header" >
             <div class="flagdiv">
                 <img class="flag" src="assets/images/Tur.png" alt="Turkish">
-                <span class="separator"></span>
+                <span class="separator_green"></span>
                 <img class="flag" src="assets/images/Eng.png" alt="English">
             </div>    
             <div class="nametitle">
-                    <p class="name">Erdinç Kuvvet</p>
-                    <p class="title">Computer Engineering Student </p>
+                    <span class="name">Erdinç Kuvvet</span>
+                    <span class="title">Computer Engineering Student </span>
                     <img class="profile_photo" src="assets\images\profile_photo.png" >
             </div>
             <div>
                 <img class="image" src="assets/images/header_rightside.jpg" alt="Right Side Image">
+            </div>
+        </div>
+
+        <div class = "main">
+          <nav class="menu">
+            <ul>
+                <li>
+                    <img src="assets\images\facebook.png" alt="Facebook Logo">
+                    <a href="http://www.facebook.com.tr">Facebook</a>
+                </li>
+                <li>
+                    <img src="assets\images\insta.png" alt="Instagram Logo">
+                    <a href="https://www.instagram.com">Instagram</a>
+                </li>
+                <li>
+                    <img src="assets\images\twiter.png" alt="Twitter Logo">
+                    <a href="http://www.twitter.com.tr">Twitter</a>
+                </li>
+                <li>
+                    <img src="assets\images\in.png" alt="Linkedin Logo">
+                    <a href="https://www.linkedin.com">Linkedin</a>
+                </li>
+                <li>
+                    <img src="assets\images\g.png" alt="Google+ Logo">
+                    <a href="http://www.google.com.tr">Google+</a>
+                </li>
+                <li>
+                    <img src="assets\images\youtube.png" alt="Youtube Logo">
+                    <a href="http://www.youtube.com">Youtube</a>
+                </li>
+            </ul>
+        </nav>
+
+            <div class="center">
+              
+            </div>
+
+            <div class="rightside">
+                <div class="quickid">
+                  <span class="quickid_title">QUICK ID</span>
+                  <span class="seperator_red"></span>
+                  <div class="innerTitle">
+                    <div class="questions">
+                      <p>Phone</p>
+                      <p>Email</p>
+                      <p>Website</p>
+                      <p>Address</p>
+                  </div>
+                  <div class="answers">
+                      <p>+90 505 355 46 73</p>
+                      <p>erdinc.kuvvet@fsm.edu.tr</p>
+                      <p>www.fsm.edu.tr</p>
+                      <p>Sütlüce, Karaağaç Cd 12/A, 34445 Beyoğlu/İstanbul</p>  
+                  </div>
+
+                  </div>
+                  
+                </div>
+                <div>
+                  
+                </div>
             </div>
         </div>
             
