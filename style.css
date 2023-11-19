@@ -101,14 +101,15 @@ nav {
 }
 
 .center {
-    margin-left: 15%;
+    margin-left: 15vw;
     border: 3px dashed blue;
     padding: 40px 20px 20px 20px;
     text-align: center;
     
-    width: 55%;
+    width: 55vw;
     background-color: white;
     font-family: "Arial";
+    
 }
 
 .rightside {
@@ -120,6 +121,9 @@ nav {
     border: 2px solid rgb(2, 182, 2);
     border-radius: 20px;
     overflow: hidden;
+    position: absolute;
+    top: 33vh;
+    right: 0vw;
 
 }
 
