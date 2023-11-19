@@ -72,6 +72,7 @@
     height: 70px;
     border-radius: 50%;
     border: 1.5px solid blue;
+    z-index: 1;
 }
 
 /* Style for the image */
@@ -86,6 +87,7 @@
 
 .main {
     margin-top: 5px;
+    position: relative;
 
 }
 
@@ -102,11 +104,12 @@ nav {
 
 .center {
     margin-left: 15vw;
+    margin-right: 15vw;
     border: 3px dashed blue;
     padding: 40px 20px 20px 20px;
     text-align: center;
     
-    width: 55vw;
+    width: 54vw;
     background-color: white;
     font-family: "Arial";
     
@@ -122,9 +125,8 @@ nav {
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    top: 33vh;
-    right: 0vw;
-
+    top: 0;
+    right: 0;
 }
 
 .menu {
